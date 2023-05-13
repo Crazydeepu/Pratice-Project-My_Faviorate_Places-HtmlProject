@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Header section */
+header{
+    position: sticky;
+}
+
+#header-section{
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+    height: 20px;
+    background-color: #2d3c7d;
+    margin: 0%;
+}
+
+.header-options{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/* Poster */
+#Main-poster{
+    width: 100%;
+    height: 550px;
+    padding-bottom: 0%;
+    text-align: center;
+    position: relative;
+}
+
+/* New Heading */
+p{
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px solid green;
+    align-content: center;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+}
+  /* Rectangle Boxes */
+
+#rectangle-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card{
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    perspective: 1000px;   
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform:rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    background-color: dodgerblue;
+    color: wheat;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+
+.img-all{
+    border-radius: 20px;
+}
